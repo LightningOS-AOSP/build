@@ -231,7 +231,7 @@ script.Print("==================================================================
   buildidn = target_info.GetBuildProp("ro.build.id")
   buildday = target_info.GetBuildProp("ro.build.date")
   securep = target_info.GetBuildProp("ro.build.version.security_patch")
-  device = target_info.GetBuildProp("ro.build.product")
+  device = target_info.GetBuildProp("ro.product.name")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
   maintainer = target_info.GetBuildProp("ro.lightningos.maintainer")
   script.Print("***********************************************");

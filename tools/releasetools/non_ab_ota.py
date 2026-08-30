@@ -228,7 +228,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   securep = target_info.GetBuildProp("ro.build.version.security_patch")
   device = target_info.GetBuildProp("ro.product.name")
   manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
-  maintainer = target_info.GetBuildProp("ro.lightningos.mantainer")
+  maintainer = target_info.GetBuildProp("ro.lightningos.maintainer")
   script.Print("***********************************************");
   script.Print(" ROM version      : %s"%(buildid));
   script.Print(" Android version  : %s"%(androidver));
@@ -237,7 +237,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   script.Print("***********************************************");
   script.Print(" Device           : %s"%(device));
   script.Print(" Manufacturer     : %s"%(manufacturer));
-  script.Print(" Mantainer       : %s"%(mantainer));
+  script.Print(" Maintainer       : %s"%(maintainer));
   script.Print("***********************************************");
   script.Print("                                         ");
 

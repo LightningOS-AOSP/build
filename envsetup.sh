@@ -584,6 +584,16 @@ function _lunch_meat()
     fixup_common_out_dir
 
     set_stuff_for_environment
+
+    echo ""
+
+    local LIGHTNING_DIR="$(gettop)/build/make"
+    if [ -t 1 ] && [ -x "$LIGHTNING_DIR/lightning_logo.sh" ]; then
+        "$LIGHTNING_DIR/lightning_logo.sh" "$LIGHTNING_DIR/lightning_ascii_logo"
+    fi
+
+    echo ""
+
     [[ -n "${ANDROID_QUIET_BUILD:-}" ]] || printconfig
 
     if [[ -z "${ANDROID_QUIET_BUILD}" && -z "${LINEAGE_BUILD}" ]]; then

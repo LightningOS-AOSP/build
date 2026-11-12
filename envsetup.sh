@@ -1445,8 +1445,6 @@ function lightning() {
         return 1
     fi
 
-    m installclean
-
     local jCount=""
     local cmd=""
 
